@@ -7,4 +7,9 @@ pipeline {
                                  	}
                      	}
          	}
+         post{
+                  always{
+                           emailext body: 'abc', subject: 'Java app', to: 'harshitpoojari2801@gmail.com'
+                  } 
+         }
  }
